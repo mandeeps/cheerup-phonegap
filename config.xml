@@ -27,6 +27,6 @@
     <icon src="img/icon256.png" gap:platform="android" gap:density="xhdpi" />
 
     <access origin="http://127.0.0.1*"/>
-    <!--<access origin="*" browserOnly="true" />-->
+    <access origin="*" browserOnly="true" />
 
 </widget>
