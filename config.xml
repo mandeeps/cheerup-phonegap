@@ -27,9 +27,8 @@
     <icon src="img/icon256.png" gap:platform="android" gap:density="xhdpi" />
 
     <access origin="http://127.0.0.1*"/>
-    <access origin="*"/>
-<!--    <access origin="https://api.imgur.com/*"/>
+    <!--<access origin="*"/>-->
+    <access origin="https://api.imgur.com/*"/>
     <access origin="http://i.imgur.com/*"/>
-    -->
 
 </widget>

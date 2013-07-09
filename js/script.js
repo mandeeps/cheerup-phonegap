@@ -90,7 +90,7 @@
           albumsLoaded++;
           for (var y = 0; y < imgur.data.length; y++) {
             if (lowRes) {
-              list.push(imgur.data[y].link.replace(/.([^.]*)$/, 'm.$1'));
+              list.push(imgur.data[y].link.replace(/.([^.]*)$/, '1.$1'));
             }
             else {list.push(imgur.data[y].link);}
           }
