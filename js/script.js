@@ -97,12 +97,12 @@
           if (albumsLoaded === ALBUM_COUNT) {
             var count = list.length;
             //console.log('# images to show: ' + count);
-            //preLoad(count).done(function() {
+            preLoad(count).done(function() {
               notifyElem.slideUp();
               preloaded = true;
               offlineList.splice(0, 5);
               storage.localStoreList = JSON.stringify(offlineList);
-            //});
+            });
           }
         },
   
