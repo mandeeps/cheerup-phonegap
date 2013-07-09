@@ -1,0 +1,32 @@
+<!--PhoneGap Build config.xml -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "com.shergillgames.cheerup"
+        version = "0.8.3">
+
+    <name>Cheer Up!</name>
+
+    <description>
+        Cheer yourself up by viewing adorable random photos from imgur.com/r/aww.
+    </description>
+
+    <author href="shergillgames.com" email="mandeep@shergillgames.com">
+        Mandeep Shergill
+    </author>
+    
+    <preference name="load-url-timeout" value="60000" />
+    <preference name="permissions" value="none"/>
+    <preference name="fullscreen" value="false" />
+    <icon src="img/icon64.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="img/icon128.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="img/icon256.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="img/icon256.png" gap:platform="android" gap:density="xhdpi" />
+
+    <access origin="http://127.0.0.1*"/>
+    <access origin="*" browserOnly="true" />
+
+</widget>

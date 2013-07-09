@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# v23
+
+CACHE:
+index.html
+
+css/stylesheet.css
+
+img/icon60.png
+img/icon64.png
+img/icon128.png
+img/icon256.png
+img/offline1.jpg
+img/offline2.jpg
+img/offline3.jpg
+img/offline4.jpg
+img/offline5.jpg
+
+js/script.js
+js/zepto.min.js
+js/fx_methods.js
+
+NETWORK:
+*

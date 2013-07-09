@@ -1,0 +1,127 @@
+html, body {
+  display: block;
+  height: 100%;
+  margin: 1px 0px 1px 0px;
+  padding: 0;
+  overflow: hidden;
+  background: -webkit-linear-gradient(bottom, darkorange, orange);
+  background: linear-gradient(to bottom, orange, darkorange);
+}
+
+#notify {
+  position: absolute;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  background: #4479BA;
+  color: #FFF;
+  z-index: 1;
+  display: none;
+}
+
+#main {
+  position: relative;
+  height: 93%;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+#photo {
+  max-height: 95%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+#photo:hover {
+  cursor: pointer;
+}
+
+#controls {
+  width: 100%;
+  position: relative;
+  bottom: 12px;
+  display: block;
+  text-align: center;
+}
+
+/*#B2G {
+  display: none;
+}*/
+
+/* Shamelessly stolen from http://www.usabilitypost.com/2012/01/10/pressed-button-state-with-css3 */
+button {
+  padding: 10px 15px;
+  background: #4479BA;
+  color: #FFF;
+  border-radius: 8px;
+  border: solid 1px #20538D;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+button:hover {
+  background: #356094;
+  border: solid 1px #2A4E77;
+  text-decoration: none;
+}
+
+button:active {
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  background: #2E5481;
+  border: solid 1px #203E5F;
+}
+
+/* Github ribbon styling copypasta from rumyra's Pocket Kitten */
+/*.github-ribbon {
+  display: block;
+  position: absolute;
+  top: -32px; right: -116px;
+  padding: 10px 60px;
+  background-color: rgba(55,55,55,1);
+  border: 1px solid rgba(255,255,255,1);
+  box-shadow: 0px 0px 0px 4px rgba(55,55,55,1);
+
+  color: rgba(255,255,255,1);
+  font-size: 18px;
+  text-decoration: none;
+
+  -webkit-transform-origin: 0 0 ;
+  -moz-transform-origin: 0 0 ;
+  -o-transform-origin: 0 0 ;
+  -ms-transform-origin: 0 0 ;
+  transform-origin: 0 0 ;
+
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.github-ribbon:hover {
+  box-shadow: 0px 0px 0px 4px rgba(55,55,55,1),
+    0px 0px 10px 8px rgba(0,0,0,0.2);
+  top: -31px;
+}*/
+
+@media screen and (max-width: 640px) {
+  .github-ribbon {
+    padding: 2px 60px;
+  }
+}
+
+@media screen and (max-height: 320px) {
+  #controls {
+    bottom: 22px;
+  }
+}

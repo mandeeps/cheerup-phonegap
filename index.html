@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cheerup.appcache">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <link rel='stylesheet' type='text/css' href='css/stylesheet.css'>
+    <link rel="icon" href='img/icon64.png'>
+    <link rel='apple-touch-icon' href='img/icon256.png'>
+    <link rel='dns-prefetch' href='//imgur.com'>
+    <title>Cheer Up!</title>
+  </head>
+
+  <body>
+    <div id='notify'>Click photos for comments once loaded.<br>Loading...</div>
+    <div id='main'>
+      <img id='photo' alt="A hopefully cute random image" src="img/icon256.png">
+    </div>
+    <div id='controls'>
+      <button id="LastImg"><b>&lt;</b></button>
+      <button id="ImgurAPI"><b>Random</b></button>
+      <!--<button id="B2G"><b>Install</b></button>-->
+    </div>
+    <!--<a href="https://github.com/mandeeps/CheerUp/" target="_blank" class="github-ribbon">View code on Github</a>-->
+
+    <script type='text/javascript' src='js/zepto.min.js'></script>
+    <script type='text/javascript' src='js/fx_methods.js'></script>
+    <script type='text/javascript' src='js/script.js'></script>
+
+  </body>
+
+</html>
