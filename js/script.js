@@ -1,6 +1,6 @@
 (function() {
   var curImg = 0, lastImg = 0, imgC = 0, list = [], lowRes = true;
-  var ALBUM_COUNT = 2; // ALBUM_COUNT * ALBUM_IMAGES pet photos should be enough for anybody!
+  var ALBUM_COUNT = 1; // ALBUM_COUNT * ALBUM_IMAGES pet photos should be enough for anybody!
   var ALBUM_IMAGES = 56; // Specify images per album, in case Imgur changes this
   var offlineList = ['img/offline1.jpg', 'img/offline2.jpg', 'img/offline3.jpg',
    'img/offline4.jpg', 'img/offline5.jpg'];
@@ -90,7 +90,7 @@
           albumsLoaded++;
           for (var y = 0; y < imgur.data.length; y++) {
             if (lowRes) {
-              list.push(imgur.data[y].link.replace(/.([^.]*)$/, 'l.$1'));
+              list.push(imgur.data[y].link.replace(/.([^.]*)$/, 'm.$1'));
             }
             else {list.push(imgur.data[y].link);}
           }
@@ -246,12 +246,12 @@
     //githubElem.click(function() {
     //  $(this).hide();
     //});
-    notifyElem.click(function() {
+    notifyElem.tap(function() {
       $(this).slideUp();
     });
-    $('#ImgurAPI').click(pickImage);
-    $('#LastImg').click(viewLastImage);
-    photoElem.click(visitImgur);
+    $('#ImgurAPI').tap(pickImage);
+    $('#LastImg').tap(viewLastImage);
+    photoElem.tap(visitImgur);
     //installElem.click(installerFF);
   });
 })();  
