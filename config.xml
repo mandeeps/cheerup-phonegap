@@ -6,7 +6,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id = "com.shergillgames.cheerup"
-        version = "0.8.3">
+        version = "0.8.4">
 
     <name>Cheer Up!</name>
 
@@ -26,7 +26,9 @@
     <icon src="img/icon256.png" gap:platform="android" gap:density="hdpi" />
     <icon src="img/icon256.png" gap:platform="android" gap:density="xhdpi" />
 
-    <access origin="http://127.0.0.1*"/>
-    <access origin="*"/>
+    <access origin="http://127.0.0.1"/>
+    <access origin="https://api.imgur.com"/>
+    <access origin="http://i.imgur.com"/>
+    <access origin="http://imgur.com" browserOnly="true"/>
 
 </widget>

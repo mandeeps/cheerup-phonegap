@@ -98,7 +98,7 @@
             var count = list.length;
             //console.log('# images to show: ' + count);
             preLoad(count).done(function() {
-              notifyElem.slideUp();
+              //notifyElem.slideUp();
               preloaded = true;
               offlineList.splice(0, 5);
               storage.localStoreList = JSON.stringify(offlineList);
@@ -182,7 +182,7 @@
   
   function offline() {
     //console.log('now offline!!!');
-    notifyElem.html('Working offline...<br>Click to close');
+    notifyElem.html('Working offline...<br>Tap to close');
     notifyElem.slideDown();
     //githubElem.css('display', 'none');
     if (storage.localStoreList.length > ALBUM_IMAGES) {
@@ -194,7 +194,7 @@
     //console.log('now online');
     //if (!installed) {githubElem.css('display', 'block');}
     if (!preloaded) {
-      notifyElem.html('Click photos for comments once loaded.<br>Loading...');
+      notifyElem.html('Tap photos for comments once loaded.'); //<br>Loading...
       notifyElem.slideDown();
     }
     else {notifyElem.slideUp();}
@@ -216,9 +216,9 @@
   }*/
   
   function windowSize(firstRun) {
-    if (window.innerWidth > 1024 || window.innerHeight > 1024) {
+    if ((window.innerWidth > 1000 && window.innerHeight > 1000) && firstRun) {
       // only load higher res images if browser has > 1024px available
-      if (firstRun) {lowRes = false;}
+      lowRes = false;
       //githubElem.text("View code on Github");
     }
     //else {githubElem.text("view code...");}
@@ -230,6 +230,7 @@
     if (navigator.onLine) {
       //console.log('first run online check...');
       notifyElem.slideDown();
+      setTimeout(function(){notifyElem.slideUp();}, 3000)
       loadImgur();
     }
     else {offline();}
