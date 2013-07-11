@@ -230,7 +230,7 @@
     if (navigator.onLine) {
       //console.log('first run online check...');
       notifyElem.slideDown();
-      setTimeout(function(){notifyElem.slideUp();}, 3000)
+      setTimeout(function(){notifyElem.slideUp();}, 5000)
       loadImgur();
     }
     else {offline();}

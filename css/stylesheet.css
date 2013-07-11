@@ -1,7 +1,7 @@
 html, body {
   display: block;
   height: 100%;
-  margin: 1px 0px 1px 0px;
+  margin: 0px 0px 1px 0px;
   padding: 0;
   overflow: hidden;
   background: -webkit-linear-gradient(bottom, darkorange, orange);
