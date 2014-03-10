@@ -46,12 +46,13 @@ html, body {
   text-align: center;
 }
 
-/*#B2G {
+#B2G {
   display: none;
-}*/
+}
 
 /* Shamelessly stolen from http://www.usabilitypost.com/2012/01/10/pressed-button-state-with-css3 */
 button {
+  font-weight: bold;
   padding: 10px 15px;
   background: #4479BA;
   color: #FFF;
@@ -68,6 +69,9 @@ button {
   user-select:none;
 }
 
+button:focus {outline:none;}
+button::-moz-focus-inner {border:0;}
+
 button:hover {
   background: #356094;
   border: solid 1px #2A4E77;
@@ -82,7 +86,7 @@ button:active {
 }
 
 /* Github ribbon styling copypasta from rumyra's Pocket Kitten */
-/*.github-ribbon {
+.github-ribbon {
   display: block;
   position: absolute;
   top: -32px; right: -116px;
@@ -112,7 +116,7 @@ button:active {
   box-shadow: 0px 0px 0px 4px rgba(55,55,55,1),
     0px 0px 10px 8px rgba(0,0,0,0.2);
   top: -31px;
-}*/
+}
 
 @media screen and (max-width: 640px) {
   .github-ribbon {
