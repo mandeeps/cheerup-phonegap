@@ -18,7 +18,7 @@
         Mandeep Shergill
     </author>
     
-    <preference name="phonegap-version" value="4.1.2" />
+    <preference name="phonegap-version" value="cli-5.2.0" />
     <preference name="load-url-timeout" value="60000" />
     <preference name="permissions" value="none"/>
     <preference name="fullscreen" value="false" />
