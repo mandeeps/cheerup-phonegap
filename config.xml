@@ -31,5 +31,6 @@
     <access origin="https://api.imgur.com"/>
     <access origin="http://i.imgur.com"/>
     <access origin="http://imgur.com" browserOnly="true"/>
+    <access origin="*"/>
 
 </widget>
