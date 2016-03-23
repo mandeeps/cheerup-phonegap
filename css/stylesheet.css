@@ -87,7 +87,7 @@ button:active {
 
 /* Github ribbon styling copypasta from rumyra's Pocket Kitten */
 .github-ribbon {
-  display: block;
+  display: none;
   position: absolute;
   top: -32px; right: -116px;
   padding: 10px 60px;
