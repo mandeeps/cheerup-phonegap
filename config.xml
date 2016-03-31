@@ -27,10 +27,10 @@
     <icon src="img/icon256.png" gap:platform="android" gap:density="hdpi" />
     <icon src="img/icon256.png" gap:platform="android" gap:density="xhdpi" />
 
-    <access origin="http://127.0.0.1"/>
+    <!--<access origin="http://127.0.0.1"/>
     <access origin="https://api.imgur.com"/>
-    <access origin="http://i.imgur.com"/>
+    <access origin="http://i.imgur.com"/> -->
     <access origin="http://imgur.com" browserOnly="true"/>
-    <access origin="*"/>
+    <access origin="*" subdomains="true"/>
 
 </widget>
