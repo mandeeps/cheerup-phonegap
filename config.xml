@@ -19,7 +19,7 @@
     
     <gap:platform name="android" />
     <preference name="phonegap-version" value="cli-6.0.0" />
-    <preference name="load-url-timeout" value="60000" />
+    <!--<preference name="load-url-timeout" value="60000" />-->
     <preference name="permissions" value="none"/>
     <preference name="fullscreen" value="false" />
     <icon src="img/icon64.png" gap:platform="android" gap:density="ldpi" />
