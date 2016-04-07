@@ -19,7 +19,7 @@
     
     <gap:platform name="android" />
     <gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
-    <allow-navigation href="*" />
+    <allow-navigation href="api.imgur.com" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <preference name="phonegap-version" value="cli-6.0.0" />
