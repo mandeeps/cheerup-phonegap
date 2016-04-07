@@ -23,7 +23,7 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <preference name="phonegap-version" value="cli-6.0.0" />
-    <preference name="load-url-timeout" value="60000" />
+    <!--<preference name="load-url-timeout" value="60000" />-->
     <preference name="permissions" value="none"/>
     <preference name="fullscreen" value="false" />
     <icon src="img/icon64.png" gap:platform="android" gap:density="ldpi" />
@@ -31,10 +31,10 @@
     <icon src="img/icon256.png" gap:platform="android" gap:density="hdpi" />
     <icon src="img/icon256.png" gap:platform="android" gap:density="xhdpi" />
 
-    <access origin="http://127.0.0.1"/>
+    <!--<access origin="http://127.0.0.1"/>
     <access origin="https://api.imgur.com"/>
     <access origin="http://i.imgur.com"/>
-    <access origin="http://imgur.com" browserOnly="true"/>
-    <access origin="*"/>
+    <access origin="http://imgur.com" browserOnly="true"/> -->
+    <access origin="*" subdomains="true"/>
 
 </widget>
